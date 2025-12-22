@@ -1,66 +1,41 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="container">
+      <section className={styles.hero}>
+        <h1 className={styles.title}>Murphy Tech Educational Society</h1>
+        <p className={styles.subtitle}>[NUMBER] Alberta Society</p>
+        <div className={styles.missionCard}>
+          <h2>Our Mission</h2>
+          <p className={styles.missionStatement}>
+            "To publish, maintain, and promote free educational, recreational, and socially beneficial software applications and games for the general public, and to make such applications freely available without charge through digital distribution platforms."
           </p>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className={styles.cta}>
+          <Link href="/contact" className={styles.button}>Get in Touch</Link>
+          <Link href="/about" className={styles.secondaryButton}>Learn More About Us</Link>
         </div>
-      </main>
+      </section>
+
+      <section className={styles.overview}>
+        <h2>What We Do</h2>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <h3>Educational Software</h3>
+            <p>We develop applications designed to enhance learning and provide educational value to users of all ages.</p>
+          </div>
+          <div className={styles.card}>
+            <h3>Social Benefit</h3>
+            <p>Our projects are focused on providing positive social impact and beneficial tools for the general public.</p>
+          </div>
+          <div className={styles.card}>
+            <h3>Always Free</h3>
+            <p>All our applications and games are provided completely free of charge, with no monetization, ads, or in-app purchases.</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
