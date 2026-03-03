@@ -1,0 +1,53 @@
+.header {
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.lead {
+	font-size: 1.25rem;
+	color: var(--text-muted);
+}
+
+.content {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.directorsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+	margin-bottom: 4rem;
+}
+
+.directorCard {
+	padding: 2rem;
+	background-color: var(--accent);
+	border-radius: var(--border-radius);
+	text-align: center;
+	border-bottom: 4px solid var(--primary);
+}
+
+.directorCard h3 {
+	margin-bottom: 0.5rem;
+}
+
+.directorCard h3 a {
+	color: var(--primary);
+}
+
+.title {
+	font-weight: 600;
+	color: var(--text-muted);
+}
+
+.governance {
+	margin-top: 4rem;
+	padding: 2rem;
+	border: 1px solid var(--border);
+	border-radius: var(--border-radius);
+}
+
+.governance h2 {
+	margin-bottom: 1.5rem;
+}

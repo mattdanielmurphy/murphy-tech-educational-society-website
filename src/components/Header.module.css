@@ -1,0 +1,64 @@
+.header {
+	border-bottom: 1px solid var(--border);
+	padding: 1.5rem 0;
+	background: var(--background);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.headerContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo a {
+	display: flex;
+	flex-direction: column;
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.officialName {
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--text-muted);
+}
+
+.operatingName {
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.nav ul {
+	display: flex;
+	list-style: none;
+	gap: 2rem;
+}
+
+.nav a {
+	font-weight: 500;
+	color: var(--foreground);
+	transition: color 0.2s;
+}
+
+.nav a:hover {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.headerContainer {
+		flex-direction: column;
+		gap: 1.5rem;
+		text-align: center;
+	}
+
+	.nav ul {
+		gap: 1rem;
+		font-size: 0.9rem;
+	}
+}

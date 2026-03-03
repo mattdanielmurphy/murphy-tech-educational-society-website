@@ -1,0 +1,15 @@
+## Pending Changes
+- chore(metadata): rename site title to Atlas Educational Society in layout.tsx — branding change
+- feat(home): rename heading to Atlas Educational Society in page.tsx — branding change
+- chore(pkg): update package name in package.json — branding change
+- chore(vercel): update project name in .vercel/project.json — branding change
+- chore(env): update sender email in .vercel/.env.development.local — branding change
+- feat(components): restore ContactForm.tsx and ContactForm.module.css — recovery
+- feat(components): restore Footer.tsx and Footer.module.css — recovery
+- feat(components): restore Header.tsx and Header.module.css — recovery
+- feat(about): restore about page and styles — recovery
+- feat(api): restore contact form submission route — recovery
+- feat(board): restore board overview page and styles — recovery
+- feat(contact): restore contact page and styles — recovery
+- feat(legal): restore legal information page and styles — recovery
+- feat(projects): restore projects page and styles — recovery

@@ -1,0 +1,65 @@
+.header {
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.lead {
+	font-size: 1.25rem;
+	color: var(--text-muted);
+}
+
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.content section {
+	margin-bottom: 3rem;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1.5rem 0;
+}
+
+.table th,
+.table td {
+	text-align: left;
+	padding: 1rem;
+	border-bottom: 1px solid var(--border);
+}
+
+.table th {
+	width: 40%;
+	color: var(--primary);
+	font-weight: 600;
+}
+
+.content h2 {
+	margin-bottom: 1.5rem;
+	color: var(--primary);
+}
+
+.content ul {
+	padding-left: 1.5rem;
+	margin: 1rem 0;
+}
+
+.content li {
+	margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+
+	.table th,
+	.table td {
+		display: block;
+		width: 100%;
+	}
+
+	.table th {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+}

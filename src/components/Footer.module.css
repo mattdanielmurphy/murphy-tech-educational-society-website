@@ -1,0 +1,64 @@
+.footer {
+	background-color: var(--accent);
+	padding: 4rem 0 2rem;
+	border-top: 1px solid var(--border);
+	color: var(--foreground);
+}
+
+.footerGrid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 4rem;
+	margin-bottom: 3rem;
+}
+
+.orgInfo h3 {
+	margin-bottom: 1rem;
+}
+
+.orgInfo p {
+	margin-bottom: 0.5rem;
+	color: var(--text-muted);
+}
+
+.links h4 {
+	margin-bottom: 1.5rem;
+	font-size: 1.1rem;
+}
+
+.links ul {
+	list-style: none;
+}
+
+.links li {
+	margin-bottom: 0.75rem;
+}
+
+.links a {
+	color: var(--text-muted);
+	transition: color 0.2s;
+}
+
+.links a:hover {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.bottomBar {
+	padding-top: 2rem;
+	border-top: 1px solid var(--border);
+	text-align: center;
+	font-size: 0.875rem;
+	color: var(--text-muted);
+}
+
+.bottomBar p {
+	margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+	.footerGrid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+}
