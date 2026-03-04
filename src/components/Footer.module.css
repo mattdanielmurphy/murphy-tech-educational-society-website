@@ -36,17 +36,15 @@
 }
 
 .logoMark {
-	width: 40px;
-	height: 40px;
+	width: 42px;
+	height: 42px;
 	border-radius: 10px;
-	background: linear-gradient(135deg, var(--teal-500), var(--teal-600));
+	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-weight: 800;
-	font-size: 1.1rem;
-	color: var(--white);
-	box-shadow: 0 4px 16px rgba(45, 212, 191, 0.28);
+	flex-shrink: 0;
+	filter: drop-shadow(0 2px 8px rgba(45, 212, 191, 0.35));
 }
 
 .brandName {

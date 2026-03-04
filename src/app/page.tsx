@@ -9,7 +9,7 @@ const pillars = [
 		description: "We develop applications designed to enhance learning and provide genuine educational value to users of all ages.",
 	},
 	{
-		icon: "🌐",
+		icon: "🤝",
 		title: "Social Benefit",
 		description: "Every project is evaluated against our mission to serve the general public — tools that create positive impact.",
 	},
@@ -38,7 +38,7 @@ export default function Home() {
 						Nonprofit Society · Alberta, Canada
 					</div>
 					<h1 className={styles.heroTitle}>
-						Free Software for the <span className={styles.highlight}>Public Good</span>
+						Free Software for <br />a <span className={styles.highlight}>Better World</span>
 					</h1>
 					<p className={styles.heroSubtitle}>The Atlas Educational Society publishes free educational, recreational, and socially beneficial software — no ads, no purchases, no strings attached.</p>
 					<div className={styles.heroCta}>

@@ -18,3 +18,5 @@
 - style(logo): restyle globe.svg with teal gradient strokes and navy fill to match site color scheme
 - style(logo): fix globe.svg — solid teal lines, light radial gradient background (no dark navy)
 - feat(hero): replace flat SVG with CSS 3D globe (meridian + parallel rings, perspective + preserve-3d, rotateX/Y animation) — authentic 3D sphere rotation effect
+- feat(globe): replace Canvas-based globe with CSS 3D preserve-3d tile-on-sphere technique (disco-ball rotation) — eliminates reversal illusion, no rAF loop needed
+- feat(logo): replace "A" lettermark with globe.svg in Footer — branding consistency

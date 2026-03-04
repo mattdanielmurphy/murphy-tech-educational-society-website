@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import styles from "./Footer.module.css"
 
@@ -21,7 +22,7 @@ export default function Footer() {
 					{/* Brand column */}
 					<div className={styles.brand}>
 						<div className={styles.logoMark}>
-							<span>A</span>
+							<Image src='/globe.svg' alt='Atlas globe logo' width={36} height={35} priority />
 						</div>
 						<h3 className={styles.brandName}>Atlas Educational Society</h3>
 						<p className={styles.brandDesc}>A registered nonprofit society in Alberta, Canada — dedicated to providing free educational software and games for the public good.</p>

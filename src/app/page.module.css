@@ -24,12 +24,14 @@
   gap: 1.75rem;
 }
 
-/* ===== HERO GLOBE (canvas) ===== */
+/* ===== HERO GLOBE (CSS 3D) ===== */
 .heroGlobeWrap {
   width: 140px;
   height: 140px;
   margin-bottom: 0.5rem;
-  filter: drop-shadow(0 0 18px rgba(45, 212, 191, 0.4));
+  /* Perspective must sit on the *parent* of the preserve-3d element */
+  perspective: 600px;
+  filter: drop-shadow(0 0 22px rgba(45, 212, 191, 0.45));
 }
 
 
