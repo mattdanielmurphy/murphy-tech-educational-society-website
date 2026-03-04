@@ -13,3 +13,4 @@
 - feat(contact): restore contact page and styles — recovery
 - feat(legal): restore legal information page and styles — recovery
 - feat(projects): restore projects page and styles — recovery
+- feat(design): full site redesign — dark navy theme, teal/gold accents, Inter font, glassmorphism header, micro-animations, redesigned all pages and components

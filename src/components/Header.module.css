@@ -1,7 +1,9 @@
 .header {
 	border-bottom: 1px solid var(--border);
-	padding: 1.5rem 0;
-	background: var(--background);
+	padding: 0;
+	background: var(--header-bg);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 	position: sticky;
 	top: 0;
 	z-index: 1000;
@@ -11,54 +13,159 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.logo a {
-	display: flex;
-	flex-direction: column;
-	color: var(--primary);
-	text-decoration: none;
-}
-
-.officialName {
-	font-size: 0.75rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	color: var(--text-muted);
-}
-
-.operatingName {
-	font-size: 1.25rem;
-	font-weight: 700;
-}
-
-.nav ul {
-	display: flex;
-	list-style: none;
+	height: 70px;
 	gap: 2rem;
 }
 
-.nav a {
-	font-weight: 500;
+/* Logo */
+.logoLink {
+	display: flex;
+	align-items: center;
+	gap: 0.875rem;
 	color: var(--foreground);
-	transition: color 0.2s;
+	text-decoration: none;
 }
 
-.nav a:hover {
+.logoLink:hover .logoName {
 	color: var(--primary);
+}
+
+.logoMark {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	background: linear-gradient(135deg, var(--teal-500), var(--teal-600));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 800;
+	font-size: 1.1rem;
+	color: var(--white);
+	flex-shrink: 0;
+	box-shadow: 0 4px 16px rgba(45, 212, 191, 0.3);
+	transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.logoLink:hover .logoMark {
+	box-shadow: 0 6px 22px rgba(45, 212, 191, 0.5);
+	transform: scale(1.05);
+}
+
+.logoText {
+	display: flex;
+	flex-direction: column;
+}
+
+.logoName {
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--foreground);
+	line-height: 1.2;
+	transition: color var(--transition);
+}
+
+.logoSub {
+	font-size: 0.68rem;
+	font-weight: 500;
+	color: var(--foreground-subtle);
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	line-height: 1;
+}
+
+/* Nav */
+.navList {
+	display: flex;
+	list-style: none;
+	gap: 0.25rem;
+	align-items: center;
+}
+
+.navLink {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem 0.875rem;
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: var(--foreground-muted);
+	transition: color var(--transition);
+	border-radius: var(--radius-sm);
 	text-decoration: none;
+}
+
+.navLink:hover {
+	color: var(--foreground);
+	background: rgba(255, 255, 255, 0.04);
+}
+
+.navLink.active {
+	color: var(--primary);
+	font-weight: 600;
+}
+
+.activeDot {
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: var(--primary);
+	position: absolute;
+	bottom: 4px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* CTA Button */
+.ctaButton {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.55rem 1.25rem;
+	background: linear-gradient(135deg, var(--teal-500), var(--teal-600));
+	color: var(--white);
+	border-radius: var(--radius-sm);
+	font-weight: 600;
+	font-size: 0.875rem;
+	transition: all var(--transition);
+	box-shadow: 0 2px 12px rgba(45, 212, 191, 0.2);
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+.ctaButton:hover {
+	background: linear-gradient(135deg, var(--teal-400), var(--teal-500));
+	box-shadow: 0 4px 20px rgba(45, 212, 191, 0.4);
+	transform: translateY(-1px);
+	color: var(--white);
+}
+
+@media (max-width: 900px) {
+	.ctaButton {
+		display: none;
+	}
 }
 
 @media (max-width: 768px) {
 	.headerContainer {
 		flex-direction: column;
-		gap: 1.5rem;
-		text-align: center;
+		height: auto;
+		padding: 1rem 0;
+		gap: 0.75rem;
 	}
 
-	.nav ul {
-		gap: 1rem;
-		font-size: 0.9rem;
+	.logoSub {
+		display: none;
+	}
+
+	.navList {
+		gap: 0;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.navLink {
+		font-size: 0.85rem;
+		padding: 0.4rem 0.6rem;
 	}
 }

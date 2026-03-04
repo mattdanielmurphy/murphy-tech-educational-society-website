@@ -1,24 +1,28 @@
 import "./globals.css"
 
-import { Geist, Geist_Mono } from "next/font/google"
-
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
+import { Inter } from "next/font/google"
 import type { Metadata } from "next"
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
+const inter = Inter({
+	variable: "--font-inter",
 	subsets: ["latin"],
-})
-
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
-	subsets: ["latin"],
+	display: "swap",
 })
 
 export const metadata: Metadata = {
-	title: "Atlas Educational Society",
-	description: "To publish, maintain, and promote free educational, recreational, and socially beneficial software applications and games.",
+	title: {
+		default: "Atlas Educational Society",
+		template: "%s | Atlas Educational Society",
+	},
+	description: "A nonprofit society dedicated to publishing free educational, recreational, and socially beneficial software for the general public.",
+	keywords: ["educational software", "nonprofit", "free apps", "social benefit", "Alberta"],
+	openGraph: {
+		title: "Atlas Educational Society",
+		description: "Free educational software for the public good — no ads, no purchases, no tracking.",
+		type: "website",
+	},
 }
 
 export default function RootLayout({
@@ -28,7 +32,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${geistSans.variable} ${geistMono.variable}`}>
+			<body className={inter.variable}>
 				<Header />
 				<main>{children}</main>
 				<Footer />

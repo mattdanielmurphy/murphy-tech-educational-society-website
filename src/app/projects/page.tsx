@@ -1,40 +1,80 @@
 import styles from "./projects.module.css"
 
+const principles = [
+	{
+		icon: "🎓",
+		label: "Educational Value",
+		desc: "Every project must provide genuine educational or skill-building benefit.",
+	},
+	{
+		icon: "🤝",
+		label: "Social Benefit",
+		desc: "Software focused on positive social impact and public good.",
+	},
+	{
+		icon: "🔓",
+		label: "Open Access",
+		desc: "Distributed freely on major platforms — App Store, Google Play, and beyond.",
+	},
+]
+
+const platforms = ["App Store", "Google Play"]
+
 export default function Projects() {
 	return (
-		<div className='container'>
-			<header className={styles.header}>
-				<h1>Our Work</h1>
-				<p className={styles.lead}>Free educational and social benefit software for everyone.</p>
-			</header>
+		<div className={styles.wrapper}>
+			<div className='page-header'>
+				<div className='container'>
+					<h1>Our Work</h1>
+					<p className='lead'>Free educational and socially beneficial software for everyone.</p>
+				</div>
+			</div>
 
-			<div className={styles.content}>
-				<section className={styles.philosophy}>
-					<h2>Software for the Public Good</h2>
-					<p>
-						The Atlas Educational Society develops and maintains software with the primary goal of providing educational and social benefit. All our applications are distributed for free on major
-						digital platforms.
-					</p>
-					<div className={styles.badge}>
-						<span>No Ads</span>
-						<span>No Purchases</span>
-						<span>No Tracking</span>
+			<div className='container'>
+				<div className={styles.content}>
+					{/* Philosophy */}
+					<section className={styles.philosophySection}>
+						<div className={styles.philosophyChips}>
+							<span className='chip'>No Ads</span>
+							<span className='chip'>No Purchases</span>
+							<span className='chip'>No Tracking</span>
+						</div>
+						<h2 className={styles.philosophyTitle}>Software for the Public Good</h2>
+						<p className={styles.philosophyDesc}>
+							The Atlas Educational Society develops and maintains software with the primary goal of providing educational and social benefit. All our applications are distributed for free on major
+							digital platforms.
+						</p>
+					</section>
+
+					{/* Principles grid */}
+					<div className={styles.principlesGrid}>
+						{principles.map((p) => (
+							<div key={p.label} className={styles.principleCard}>
+								<span className={styles.principleIcon}>{p.icon}</span>
+								<h3 className={styles.principleLabel}>{p.label}</h3>
+								<p className={styles.principleDesc}>{p.desc}</p>
+							</div>
+						))}
 					</div>
-				</section>
 
-				<section className={styles.projectList}>
-					<div className={styles.placeholderCard}>
-						<h3>Coming Soon</h3>
-						<p>We are currently in the development phase for our initial suite of educational applications. Check back soon for updates on our first releases!</p>
-						<div className={styles.platforms}>
-							<span>Available soon on:</span>
-							<div className={styles.platformIcons}>
-								<span className={styles.icon}>App Store</span>
-								<span className={styles.icon}>Google Play</span>
+					{/* Coming soon */}
+					<div className={styles.comingSoonCard}>
+						<div className={styles.comingSoonGlow} aria-hidden='true' />
+						<div className={styles.comingSoonBadge}>In Development</div>
+						<h2 className={styles.comingSoonTitle}>Coming Soon</h2>
+						<p className={styles.comingSoonDesc}>We are currently in the development phase for our initial suite of educational applications. Check back soon for updates on our first releases!</p>
+						<div className={styles.platformsRow}>
+							<span className={styles.platformsLabel}>Available soon on</span>
+							<div className={styles.platformPills}>
+								{platforms.map((p) => (
+									<span key={p} className={styles.platformPill}>
+										{p}
+									</span>
+								))}
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
 			</div>
 		</div>
 	)
