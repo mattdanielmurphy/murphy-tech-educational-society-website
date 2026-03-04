@@ -31,24 +31,21 @@
 }
 
 .logoMark {
-	width: 38px;
-	height: 38px;
+	width: 42px;
+	height: 42px;
 	border-radius: 10px;
-	background: linear-gradient(135deg, var(--teal-500), var(--teal-600));
+	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-weight: 800;
-	font-size: 1.1rem;
-	color: var(--white);
 	flex-shrink: 0;
-	box-shadow: 0 4px 16px rgba(45, 212, 191, 0.3);
-	transition: box-shadow var(--transition), transform var(--transition);
+	filter: drop-shadow(0 2px 8px rgba(45, 212, 191, 0.35));
+	transition: filter var(--transition), transform var(--transition);
 }
 
 .logoLink:hover .logoMark {
-	box-shadow: 0 6px 22px rgba(45, 212, 191, 0.5);
-	transform: scale(1.05);
+	filter: drop-shadow(0 4px 14px rgba(45, 212, 191, 0.6));
+	transform: scale(1.07);
 }
 
 .logoText {

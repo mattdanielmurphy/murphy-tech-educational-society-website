@@ -24,6 +24,15 @@
   gap: 1.75rem;
 }
 
+/* ===== HERO GLOBE (canvas) ===== */
+.heroGlobeWrap {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 18px rgba(45, 212, 191, 0.4));
+}
+
+
 .heroBadge {
   display: inline-flex;
   align-items: center;

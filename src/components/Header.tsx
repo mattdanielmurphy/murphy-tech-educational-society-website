@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import styles from "./Header.module.css"
 import { usePathname } from "next/navigation"
 
@@ -21,7 +22,7 @@ export default function Header() {
 				<div className={styles.logo}>
 					<Link href='/' className={styles.logoLink}>
 						<div className={styles.logoMark}>
-							<span>A</span>
+							<Image src='/globe.svg' alt='Atlas globe logo' width={36} height={35} priority />
 						</div>
 						<div className={styles.logoText}>
 							<span className={styles.logoName}>Atlas Educational Society</span>

@@ -14,3 +14,7 @@
 - feat(legal): restore legal information page and styles — recovery
 - feat(projects): restore projects page and styles — recovery
 - feat(design): full site redesign — dark navy theme, teal/gold accents, Inter font, glassmorphism header, micro-animations, redesigned all pages and components
+- feat(logo): replace "A" lettermark with globe.svg in Header — branding update
+- style(logo): restyle globe.svg with teal gradient strokes and navy fill to match site color scheme
+- style(logo): fix globe.svg — solid teal lines, light radial gradient background (no dark navy)
+- feat(hero): replace flat SVG with CSS 3D globe (meridian + parallel rings, perspective + preserve-3d, rotateX/Y animation) — authentic 3D sphere rotation effect

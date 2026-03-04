@@ -1,1 +1,33 @@
-<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.27 14.1a6.5 6.5 0 0 0 3.67-3.45q-1.24.21-2.7.34-.31 1.83-.97 3.1M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.48-1.52a7 7 0 0 1-.96 0H7.5a4 4 0 0 1-.84-1.32q-.38-.89-.63-2.08a40 40 0 0 0 3.92 0q-.25 1.2-.63 2.08a4 4 0 0 1-.84 1.31zm2.94-4.76q1.66-.15 2.95-.43a7 7 0 0 0 0-2.58q-1.3-.27-2.95-.43a18 18 0 0 1 0 3.44m-1.27-3.54a17 17 0 0 1 0 3.64 39 39 0 0 1-4.3 0 17 17 0 0 1 0-3.64 39 39 0 0 1 4.3 0m1.1-1.17q1.45.13 2.69.34a6.5 6.5 0 0 0-3.67-3.44q.65 1.26.98 3.1M8.48 1.5l.01.02q.41.37.84 1.31.38.89.63 2.08a40 40 0 0 0-3.92 0q.25-1.2.63-2.08a4 4 0 0 1 .85-1.32 7 7 0 0 1 .96 0m-2.75.4a6.5 6.5 0 0 0-3.67 3.44 29 29 0 0 1 2.7-.34q.31-1.83.97-3.1M4.58 6.28q-1.66.16-2.95.43a7 7 0 0 0 0 2.58q1.3.27 2.95.43a18 18 0 0 1 0-3.44m.17 4.71q-1.45-.12-2.69-.34a6.5 6.5 0 0 0 3.67 3.44q-.65-1.27-.98-3.1" fill="#666"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="329px" height="318px" viewBox="0 0 329 318" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Atlas Educational Society Globe</title>
+    <defs>
+        <circle id="path-1" cx="119" cy="119" r="119"></circle>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="globe-icon" transform="translate(47, 40)">
+            <!-- Globe background circle with soft gradient fill -->
+            <circle id="Oval-Copy-2" stroke="#2dd4bf" stroke-width="12" fill="none" cx="119" cy="119" r="119"></circle>
+            <!-- Clip mask so interior lines don't bleed outside the circle -->
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <!-- All globe lines in a single solid teal — no per-path gradient -->
+            <g id="Group-2" mask="url(#mask-2)" stroke="#2dd4bf" stroke-width="12">
+                <g transform="translate(-0.9999, -2)">
+                    <!-- Central meridian ellipse -->
+                    <ellipse id="Oval" cx="119.99995" cy="121" rx="67" ry="119"></ellipse>
+                    <!-- Lower latitude arc -->
+                    <path d="M213.99995,205.5 C213.99995,185.893891 171.914716,170 119.99995,170 C68.0851835,170 25.99995,185.893891 25.99995,205.5" id="Oval-Copy"></path>
+                    <!-- Upper latitude arc -->
+                    <path d="M214.99995,71.5 C214.99995,51.8938914 172.914716,36 120.99995,36 C69.0851835,36 26.99995,51.8938914 26.99995,71.5" id="Oval-Copy-Top" transform="translate(121, 53.75) rotate(180) translate(-121, -53.75)"></path>
+                    <!-- Vertical center line -->
+                    <line x1="120.49995" y1="241.5" x2="120.49995" y2="0.5" id="Line" stroke-linecap="square"></line>
+                    <!-- Horizontal equator line -->
+                    <line x1="0" y1="120.99995" x2="241" y2="120.99995" id="Line-Copy" stroke-linecap="square"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

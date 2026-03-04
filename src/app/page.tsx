@@ -1,3 +1,4 @@
+import GlobeCanvas from "@/components/GlobeCanvas"
 import Link from "next/link"
 import styles from "./page.module.css"
 
@@ -27,6 +28,11 @@ export default function Home() {
 			{/* Hero */}
 			<section className={styles.hero}>
 				<div className={`container ${styles.heroInner}`}>
+					{/* Canvas-rendered 3D globe */}
+					<div className={styles.heroGlobeWrap} aria-hidden='true'>
+						<GlobeCanvas size={140} />
+					</div>
+
 					<div className={styles.heroBadge}>
 						<span className={styles.badgeDot} />
 						Nonprofit Society · Alberta, Canada
