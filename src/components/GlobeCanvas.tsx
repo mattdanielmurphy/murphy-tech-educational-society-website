@@ -36,8 +36,7 @@ export default function GlobeCanvas({ size = 140 }: { size?: number }) {
 		// OPTIMIZATION 1: Generate the coordinate arrays exactly ONCE.
 		// We cache the resulting GeoJSON so D3 isn't building arrays 60x a second.
 		const graticuleData = d3.geoGraticule().step([60, 30])()
-		// @ts-ignore - D3 specific sphere geometry
-		const sphereData = { type: "Sphere" }
+		const sphereData: d3.GeoSphere = { type: "Sphere" }
 
 		// Degrees per second (e.g. 36 means one full 360° revolution every 10 seconds)
 		const SPEED = 36

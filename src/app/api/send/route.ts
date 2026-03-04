@@ -61,6 +61,10 @@ ${message}`,
 				text: `Hi ${name},
 
 Thank you for contacting Atlas Educational Society. We have received your message and will get back to you soon.
+For your records, here is a copy of your message:
+${message}
+
+If you have more to add, simply reply to this email.
 
 Best regards,
 
@@ -73,9 +77,7 @@ Atlas Educational Society`,
           <blockquote style="border-left: 4px solid #004a99; padding-left: 1rem; color: #666;">
             ${message.replace(/\n/g, "<br>")}
           </blockquote>
-					<br><br>
 					<p>If you have more to add, simply reply to this email.</p>
-					<br>
 					<p>Best regards,<br><br>Atlas Educational Society</p>
         `,
 			}),

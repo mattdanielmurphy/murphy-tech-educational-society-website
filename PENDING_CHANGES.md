@@ -1,22 +1,3 @@
 ## Pending Changes
-- chore(metadata): rename site title to Atlas Educational Society in layout.tsx — branding change
-- feat(home): rename heading to Atlas Educational Society in page.tsx — branding change
-- chore(pkg): update package name in package.json — branding change
-- chore(vercel): update project name in .vercel/project.json — branding change
-- chore(env): update sender email in .vercel/.env.development.local — branding change
-- feat(components): restore ContactForm.tsx and ContactForm.module.css — recovery
-- feat(components): restore Footer.tsx and Footer.module.css — recovery
-- feat(components): restore Header.tsx and Header.module.css — recovery
-- feat(about): restore about page and styles — recovery
-- feat(api): restore contact form submission route — recovery
-- feat(board): restore board overview page and styles — recovery
-- feat(contact): restore contact page and styles — recovery
-- feat(legal): restore legal information page and styles — recovery
-- feat(projects): restore projects page and styles — recovery
-- feat(design): full site redesign — dark navy theme, teal/gold accents, Inter font, glassmorphism header, micro-animations, redesigned all pages and components
-- feat(logo): replace "A" lettermark with globe.svg in Header — branding update
-- style(logo): restyle globe.svg with teal gradient strokes and navy fill to match site color scheme
-- style(logo): fix globe.svg — solid teal lines, light radial gradient background (no dark navy)
-- feat(hero): replace flat SVG with CSS 3D globe (meridian + parallel rings, perspective + preserve-3d, rotateX/Y animation) — authentic 3D sphere rotation effect
-- feat(globe): replace Canvas-based globe with CSS 3D preserve-3d tile-on-sphere technique (disco-ball rotation) — eliminates reversal illusion, no rAF loop needed
-- feat(logo): replace "A" lettermark with globe.svg in Footer — branding consistency
+- fix(components): type sphereData as d3.GeoSphere in GlobeCanvas.tsx — resolve Vercel build error due to type mismatch
+- fix(api): add copy of message to confirmation email — improve user experience
