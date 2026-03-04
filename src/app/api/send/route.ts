@@ -56,12 +56,14 @@ ${message}`,
 			resend.emails.send({
 				from: `Atlas Educational Society <${senderEmail}>`,
 				to: email,
+				replyTo: recipientEmail,
 				subject: "We received your message",
 				text: `Hi ${name},
 
 Thank you for contacting Atlas Educational Society. We have received your message and will get back to you soon.
 
 Best regards,
+
 Atlas Educational Society`,
 				html: `
           <h3>Hello ${name},</h3>
@@ -71,7 +73,10 @@ Atlas Educational Society`,
           <blockquote style="border-left: 4px solid #004a99; padding-left: 1rem; color: #666;">
             ${message.replace(/\n/g, "<br>")}
           </blockquote>
-          <p>Best regards,<br>Atlas Educational Society</p>
+					<br><br>
+					<p>If you have more to add, simply reply to this email.</p>
+					<br>
+					<p>Best regards,<br><br>Atlas Educational Society</p>
         `,
 			}),
 		])
