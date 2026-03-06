@@ -41,8 +41,8 @@ export default function Projects() {
 						</div>
 						<h2 className={styles.philosophyTitle}>Software for the Public Good</h2>
 						<p className={styles.philosophyDesc}>
-							The Atlas Educational Society develops and maintains software with the primary goal of providing educational and social benefit. All our applications are distributed for free on major
-							digital platforms.
+							The Atlas Educational Society onboards and publishes software with the primary goal of providing educational and social benefit. All applications in our suite are distributed for free on
+							major digital platforms.
 						</p>
 					</section>
 
@@ -60,9 +60,12 @@ export default function Projects() {
 					{/* Coming soon */}
 					<div className={styles.comingSoonCard}>
 						<div className={styles.comingSoonGlow} aria-hidden='true' />
-						<div className={styles.comingSoonBadge}>In Development</div>
+						<div className={styles.comingSoonBadge}>In Pipeline</div>
 						<h2 className={styles.comingSoonTitle}>Coming Soon</h2>
-						<p className={styles.comingSoonDesc}>We are currently in the development phase for our initial suite of educational applications. Check back soon for updates on our first releases!</p>
+						<p className={styles.comingSoonDesc}>
+							We are currently onboarding a suite of educational applications licensed for free public distribution. Our mission is to ensure these high-impact tools are maintained and delivered to
+							the community at no cost.
+						</p>
 						<div className={styles.platformsRow}>
 							<span className={styles.platformsLabel}>Available soon on</span>
 							<div className={styles.platformPills}>

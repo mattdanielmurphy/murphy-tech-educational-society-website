@@ -59,10 +59,10 @@ export default function Board() {
 							<h2 className={styles.governanceTitle}>Governance Structure</h2>
 							<p>
 								The Atlas Educational Society is governed by a Board of Directors who serve to ensure the organization remains true to its mission and objects. The board is responsible for strategic
-								oversight, financial accountability, and ensuring all activities align with the society's non-profit status in Alberta.
+								oversight, financial accountability, and ensuring all activities align with the society&apos;s non-profit status in Alberta.
 							</p>
 							<p>
-								All directors serve as <strong>volunteers</strong>, reflecting our commitment to maximizing the social benefit of our software initiatives.
+								All directors serve as <strong>volunteers</strong>, reflecting our commitment to maximizing the social benefit of the society&apos;s software initiatives.
 							</p>
 						</div>
 					</div>

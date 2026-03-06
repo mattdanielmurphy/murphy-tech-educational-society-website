@@ -25,7 +25,7 @@ export default function Footer() {
 							<Image src='/globe.svg' alt='Atlas globe logo' width={36} height={35} priority />
 						</div>
 						<h3 className={styles.brandName}>Atlas Educational Society</h3>
-						<p className={styles.brandDesc}>A registered nonprofit society in Alberta, Canada — dedicated to providing free educational software and games for the public good.</p>
+						<p className={styles.brandDesc}>A registered nonprofit society in Alberta, Canada — dedicated to publishing free educational software and games for the public good.</p>
 						<div className={styles.chips}>
 							<span className={styles.chip}>No Ads</span>
 							<span className={styles.chip}>No Purchases</span>
@@ -51,9 +51,7 @@ export default function Footer() {
 					<div className={styles.contactCol}>
 						<h4 className={styles.colHeading}>Location</h4>
 						<address className={styles.address}>
-							221 Westbrook Wynd
-							<br />
-							Fort Saskatchewan, AB T8L 0L6
+							Fort Saskatchewan, AB
 							<br />
 							Canada
 						</address>

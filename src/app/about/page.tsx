@@ -8,7 +8,7 @@ const legalFacts = [
 	{ label: "Headquarters", value: "Fort Saskatchewan, Alberta" },
 ]
 
-const noList = ["Charge for app downloads", "Include in-app purchases or subscriptions", "Display advertisements in our software", "Sell user data", "Sell any products or services"]
+const noList = ["Charge for app downloads", "Include in-app purchases or subscriptions", "Display advertisements in published software", "Sell user data", "Sell any products or services"]
 
 export default function About() {
 	return (
@@ -28,7 +28,7 @@ export default function About() {
 						<span className={styles.sectionLabel}>Our Purpose</span>
 						<h2 className={styles.sectionTitle}>Why We Exist</h2>
 						<p>
-							Atlas Educational Society is established with a clear and singular focus: to create and distribute software that serves the public good. Our primary object is to publish, maintain, and
+							Atlas Educational Society is established with a clear and singular focus: to publish and distribute software that serves the public good. Our primary object is to publish, maintain, and
 							promote free educational, recreational, and socially beneficial software applications and games for the general public.
 						</p>
 						<p>We believe that technology should be a tool for empowerment and learning, accessible to everyone regardless of their financial situation.</p>
@@ -73,10 +73,10 @@ export default function About() {
 
 					{/* Focus */}
 					<section className={styles.section}>
-						<span className={styles.sectionLabel}>What We Build</span>
+						<span className={styles.sectionLabel}>What We Publish</span>
 						<h2 className={styles.sectionTitle}>Educational & Social Focus</h2>
 						<p>
-							Our development efforts prioritize projects that have clear educational value or provide specific social benefits. Whether it's a tool for learning a new skill or a recreational game
+							Our publication efforts prioritize projects that have clear educational value or provide specific social benefits. Whether it's a tool for learning a new skill or a recreational game
 							designed for positive social interaction, every project is evaluated against our mission to serve the general public.
 						</p>
 					</section>

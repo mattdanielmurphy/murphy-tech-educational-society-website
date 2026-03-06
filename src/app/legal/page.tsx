@@ -47,9 +47,7 @@ export default function Legal() {
 						<span className={styles.sectionLabel}>Office</span>
 						<h2 className={styles.sectionTitle}>Registered Office Address</h2>
 						<p>
-							221 Westbrook Wynd
-							<br />
-							Fort Saskatchewan, AB T8L 0L6
+							Fort Saskatchewan, AB
 							<br />
 							Canada
 						</p>
@@ -60,8 +58,8 @@ export default function Legal() {
 						<span className={styles.sectionLabel}>Status</span>
 						<h2 className={styles.sectionTitle}>Nonprofit Status</h2>
 						<p>
-							The Atlas Educational Society is a nonprofit organization. We do not sell products or services, and we do not generate revenue from our software applications. All software developed by
-							the society is provided free of charge to the public for educational and social benefit.
+							The Atlas Educational Society is a nonprofit organization. We do not sell products or services, and we do not generate revenue from the software applications published by the society.
+							All software published by the society is provided free of charge to the public for educational and social benefit.
 						</p>
 					</section>
 

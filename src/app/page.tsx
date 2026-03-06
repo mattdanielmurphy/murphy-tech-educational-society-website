@@ -6,7 +6,7 @@ const pillars = [
 	{
 		icon: "📚",
 		title: "Educational Software",
-		description: "We develop applications designed to enhance learning and provide genuine educational value to users of all ages.",
+		description: "We distribute applications designed to enhance learning and provide genuine educational value to users of all ages.",
 	},
 	{
 		icon: "🤝",
@@ -16,7 +16,7 @@ const pillars = [
 	{
 		icon: "🔓",
 		title: "Always Free",
-		description: "All our applications are provided completely free of charge. No ads, no in-app purchases, no tracking.",
+		description: "All applications published by the society are provided completely free of charge. No ads, no in-app purchases, no tracking.",
 	},
 ]
 
@@ -78,8 +78,8 @@ export default function Home() {
 				<div className='container'>
 					<div className={styles.sectionHeader}>
 						<span className='chip'>What We Do</span>
-						<h2 className={styles.sectionTitle}>Built to Serve, Not to Sell</h2>
-						<p className={styles.sectionDesc}>Every decision we make is guided by one principle: create software that genuinely helps people.</p>
+						<h2 className={styles.sectionTitle}>Published to Serve, Not to Sell</h2>
+						<p className={styles.sectionDesc}>Every decision we make is guided by one principle: deliver software that genuinely helps people.</p>
 					</div>
 					<div className={styles.pillarsGrid}>
 						{pillars.map((p) => (

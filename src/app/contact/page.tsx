@@ -9,9 +9,7 @@ const infoItems = [
 			<address>
 				Atlas Educational Society
 				<br />
-				221 Westbrook Wynd
-				<br />
-				Fort Saskatchewan, AB T8L 0L6
+				Fort Saskatchewan, AB
 				<br />
 				Canada
 			</address>
@@ -25,7 +23,7 @@ const infoItems = [
 	{
 		icon: "🛠️",
 		title: "Software Support",
-		content: <p>As all our software is free of charge, support is provided on a best-effort basis. Please include specific details regarding any technical issues.</p>,
+		content: <p>As all software published by the society is free of charge, support is provided on a best-effort basis. Please include specific details regarding any technical issues.</p>,
 	},
 ]
 
