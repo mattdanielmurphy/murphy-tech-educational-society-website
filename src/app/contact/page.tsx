@@ -3,27 +3,26 @@ import styles from "./contact.module.css"
 
 const infoItems = [
 	{
-		icon: "📍",
-		title: "Mailing Address",
-		content: (
-			<address>
-				Atlas Educational Society
-				<br />
-				Fort Saskatchewan, AB
-				<br />
-				Canada
-			</address>
-		),
-	},
-	{
 		icon: "💬",
 		title: "General Inquiries",
-		content: <p>For questions regarding our mission, board, or upcoming projects, use the form. We respond to all legitimate inquiries within 2–3 business days.</p>,
+		content: (
+			<p>
+				For questions regarding our mission, board, or upcoming projects, use
+				the form. We respond to all legitimate inquiries within 2–3 business
+				days.
+			</p>
+		),
 	},
 	{
 		icon: "🛠️",
 		title: "Software Support",
-		content: <p>As all software published by the society is free of charge, support is provided on a best-effort basis. Please include specific details regarding any technical issues.</p>,
+		content: (
+			<p>
+				As all software published by the society is free of charge, support is
+				provided on a best-effort basis. Please include specific details
+				regarding any technical issues.
+			</p>
+		),
 	},
 ]
 
@@ -33,7 +32,9 @@ export default function Contact() {
 			<div className='page-header'>
 				<div className='container'>
 					<h1>Contact Us</h1>
-					<p className='lead'>We value your feedback and inquiries. Reach out any time.</p>
+					<p className='lead'>
+						We value your feedback and inquiries. Reach out any time.
+					</p>
 				</div>
 			</div>
 

@@ -51,7 +51,7 @@ export default function Footer() {
 					<div className={styles.contactCol}>
 						<h4 className={styles.colHeading}>Location</h4>
 						<address className={styles.address}>
-							Fort Saskatchewan, AB
+							Fort Saskatchewan, Alberta
 							<br />
 							Canada
 						</address>

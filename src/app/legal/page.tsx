@@ -44,12 +44,16 @@ export default function Legal() {
 
 					{/* Address */}
 					<section className={styles.section}>
-						<span className={styles.sectionLabel}>Office</span>
-						<h2 className={styles.sectionTitle}>Registered Office Address</h2>
+						<span className={styles.sectionLabel}>Location</span>
+						<h2 className={styles.sectionTitle}>Registered Office</h2>
 						<p>
-							Fort Saskatchewan, AB
+							Fort Saskatchewan, Alberta
 							<br />
 							Canada
+						</p>
+						<p className={styles.footnote}>
+							Our full registered address is not publicly listed to protect our members&apos; and supporters&apos; privacy. If you require our street address for official or legal correspondence, please
+							contact us via our contact form to request mailing information.
 						</p>
 					</section>
 

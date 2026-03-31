@@ -123,3 +123,11 @@
 		border-bottom: none;
 	}
 }
+
+.footnote {
+	font-size: 0.85rem;
+	color: var(--foreground-subtle);
+	font-style: italic;
+	margin-top: 1.25rem;
+	line-height: 1.6;
+}
