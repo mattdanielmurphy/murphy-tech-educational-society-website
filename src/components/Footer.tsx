@@ -5,10 +5,9 @@ import styles from "./Footer.module.css"
 const quickLinks = [
 	{ href: "/", label: "Home" },
 	{ href: "/about", label: "About Us" },
-	{ href: "/board", label: "Board of Directors" },
-	{ href: "/projects", label: "Our Projects" },
+	{ href: "/projects", label: "Our Initiatives" },
 	{ href: "/contact", label: "Contact" },
-	{ href: "/legal", label: "Legal & Governance" },
+	{ href: "/legal", label: "Legal & Privacy" },
 ]
 
 export default function Footer() {
@@ -25,10 +24,10 @@ export default function Footer() {
 							<Image src='/globe.svg' alt='Atlas globe logo' width={36} height={35} priority />
 						</div>
 						<h3 className={styles.brandName}>Atlas Educational Society</h3>
-						<p className={styles.brandDesc}>A registered nonprofit society in Alberta, Canada — dedicated to publishing free educational software and games for the public good.</p>
+						<p className={styles.brandDesc}>A registered nonprofit society in Alberta, Canada — dedicated to promoting accessible education, student tools, open educational resources, and civic technology.</p>
 						<div className={styles.chips}>
-							<span className={styles.chip}>No Ads</span>
-							<span className={styles.chip}>No Purchases</span>
+							<span className={styles.chip}>Student Tools</span>
+							<span className={styles.chip}>Civic Tech</span>
 							<span className={styles.chip}>Always Free</span>
 						</div>
 					</div>

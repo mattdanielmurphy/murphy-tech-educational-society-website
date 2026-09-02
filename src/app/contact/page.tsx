@@ -7,9 +7,9 @@ const infoItems = [
 		title: "General Inquiries",
 		content: (
 			<p>
-				For questions regarding our mission, board, or upcoming projects, use
-				the form. We respond to all legitimate inquiries within 2–3 business
-				days.
+				For questions regarding our mission, initiatives, or student software
+				tools, use the form. We respond to all legitimate inquiries within
+				2–3 business days.
 			</p>
 		),
 	},

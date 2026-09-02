@@ -26,12 +26,11 @@ export default function About() {
 					{/* Purpose */}
 					<section className={styles.section}>
 						<span className={styles.sectionLabel}>Our Purpose</span>
-						<h2 className={styles.sectionTitle}>Why We Exist</h2>
+						<h2 className={styles.sectionTitle}>Promoting Accessible Education & Civic Tech</h2>
 						<p>
-							Atlas Educational Society is established with a clear and singular focus: to publish and distribute software that serves the public good. Our primary object is to publish, maintain, and
-							promote free educational, recreational, and socially beneficial software applications and games for the general public.
+							The Atlas Educational Society is established with a clear and singular focus: to promote accessible education, student tools, open educational resources, and civic technology. Our primary object is to develop, maintain, and freely distribute high-utility educational software applications, student utilities, and public data tools for learners, educators, and the general public.
 						</p>
-						<p>We believe that technology should be a tool for empowerment and learning, accessible to everyone regardless of their financial situation.</p>
+						<p>We believe that modern technology should empower learning and civic engagement, remaining freely accessible to everyone regardless of financial situation or background.</p>
 					</section>
 
 					{/* Legal */}
@@ -54,10 +53,9 @@ export default function About() {
 					{/* Free commitment */}
 					<section className={styles.section}>
 						<span className={styles.sectionLabel}>Our Commitment</span>
-						<h2 className={styles.sectionTitle}>Software That Stays Free</h2>
+						<h2 className={styles.sectionTitle}>Software That Stays Free & Private</h2>
 						<p>
-							A core pillar of our organization is that <strong>all applications and games published by the society are provided completely free of charge.</strong> To ensure our mission remains
-							focused on social benefit rather than profit, we commit to never:
+							A core pillar of our organization is that <strong>all applications and resources published by the society are provided completely free of charge.</strong> To ensure our mission remains focused on public social benefit and accessible learning rather than commercial profit, we commit to never:
 						</p>
 						<ul className={styles.noList}>
 							{noList.map((item) => (
@@ -73,11 +71,22 @@ export default function About() {
 
 					{/* Focus */}
 					<section className={styles.section}>
-						<span className={styles.sectionLabel}>What We Publish</span>
-						<h2 className={styles.sectionTitle}>Educational & Social Focus</h2>
+						<span className={styles.sectionLabel}>Core Initiatives</span>
+						<h2 className={styles.sectionTitle}>Educational Tools & Civic Technology</h2>
 						<p>
-							Our publication efforts prioritize projects that have clear educational value or provide specific social benefits. Whether it's a tool for learning a new skill or a recreational game
-							designed for positive social interaction, every project is evaluated against our mission to serve the general public.
+							Our software initiatives center around four core areas:
+						</p>
+						<p>
+							<strong>Student Tools & STEM Learning:</strong> Building intuitive calculation environments, mathematical scratchpads, and academic utilities that make complex problem solving accessible to students at all levels.
+						</p>
+						<p>
+							<strong>Civic Technology & Open Data:</strong> Crafting high-fidelity vector cartography, heated pedestrian indoor route navigation, and community mapping utilities that enhance public transit and campus accessibility.
+						</p>
+						<p>
+							<strong>Open Educational Resources:</strong> Providing interactive typing mastery tools, literature readers, and open educational modules that support foundational literacy and skill-building.
+						</p>
+						<p>
+							<strong>Local-First & Privacy-Preserving Utilities:</strong> Engineering native software that operates entirely on-device, safeguarding student coursework and research notes without remote tracking or third-party telemetry.
 						</p>
 					</section>
 				</div>
